@@ -8,15 +8,12 @@
     <packaging>jar</packaging>
 
     <properties>
-        <vaadin.version>23.3.12</vaadin.version>
+        <vaadin.version>24.2.3</vaadin.version>
 
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <!-- Doing release by manullay uploading to vaadin.com/directory -->
-        <maven.deploy.skip>true</maven.deploy.skip>
-
     </properties>
     <organization>
         <name>Daniel Sarkwa</name>
@@ -282,6 +279,31 @@
                 </plugins>
             </build>
         </profile>
-
+        <profile>
+            <id>weforum</id>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>nexus-esms-snapshots</id>
+                    <url>https://nexuseks.weforum.local/repository/maven-esms-snapshots/</url>
+                </snapshotRepository>
+                <repository>
+                    <id>nexus-esms-releases</id>
+                    <url>https://nexuseks.weforum.local/repository/maven-esms-releases/</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+        <profile>
+            <id>ilem</id>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>nexus-ilem-snapshots</id>
+                    <url>https://nexus01.ilem.net/repository/maven-ilem-snapshots/</url>
+                </snapshotRepository>
+                <repository>
+                    <id>nexus-ilem-releases</id>
+                    <url>https://nexus01.ilem.net/repository/maven-ilem-releases/</url>
+                </repository>
+            </distributionManagement>
+        </profile>
     </profiles>
 </project>

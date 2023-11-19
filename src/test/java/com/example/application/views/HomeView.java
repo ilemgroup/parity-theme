@@ -49,6 +49,7 @@ public class HomeView extends FlexLayout {
         addClassNames(LumoUtility.Display.FLEX, LumoUtility.FlexDirection.ROW, LumoUtility.Background.CONTRAST_5, LumoUtility.Padding.LARGE, LumoUtility.BoxSizing.BORDER,
             LumoUtility.Overflow.AUTO, LumoUtility.FlexWrap.WRAP);
         addClassNames(LumoUtility.Gap.LARGE);
+
         FlexLayout col1 = new FlexLayout();
         col1.setFlexDirection(FlexDirection.COLUMN);
         col1.addClassNames(LumoUtility.Display.FLEX, LumoUtility.FlexDirection.COLUMN, LumoUtility.Gap.LARGE, LumoUtility.Flex.GROW, LumoUtility.Flex.SHRINK);
@@ -169,9 +170,8 @@ public class HomeView extends FlexLayout {
 
     private Component createFieldExamples() {
         HorizontalLayout layout = new HorizontalLayout();
-        layout.addClassName("card");
-        layout.addClassNames(LumoUtility.Gap.LARGE, LumoUtility.Background.BASE, LumoUtility.Padding.LARGE, LumoUtility.Border.ALL,
-            LumoUtility.BorderColor.CONTRAST_10);
+        // layout.addClassName("card");
+        layout.addClassNames(LumoUtility.Gap.LARGE, LumoUtility.Background.BASE, LumoUtility.Padding.LARGE, LumoUtility.Border.ALL, LumoUtility.BorderColor.CONTRAST_10);
 
         VerticalLayout left = new VerticalLayout();
         left.setPadding(false);

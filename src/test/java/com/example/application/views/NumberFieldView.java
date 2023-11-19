@@ -34,7 +34,7 @@ public class NumberFieldView extends VerticalLayout {
         integerField.setMin(0);
         integerField.setMax(10);
         integerField.setValue(2);
-        integerField.setHasControls(true);
+        //integerField.setHasControls(true);
         add(integerField);
     }
 }
