@@ -6,10 +6,10 @@
     height: fit-content;
     color: var(--lumo-primary-contrast-color);
     background-color: var(--_gm-style-color);
-    font-size: 12px;
+    font-size: var(--lumo-font-size-m);
     font-weight: 600;
     border-radius: 1.5px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     padding-left: 8px;
     padding-right: 8px;
 }

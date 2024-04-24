@@ -42,10 +42,11 @@ html {
     --lumo-body-text-color: var(--lumo-contrast);
     --lumo-secondary-text-color: var(--lumo-shade-80pct);
     --lumo-disabled-text-color: #6b757c;
-    --lumo-font-size-l: 16px;
-    --lumo-font-size-m: 14px;
-    --lumo-font-size-xs: 11px;
-    --lumo-font-size-xxxs: 8px;
+    --lumo-font-size-l: 1.125rem;
+    --lumo-font-size-m: 1rem;
+    --lumo-font-size-xs: 0.8125rem;
+    --lumo-font-size-xxs: 0.75rem;
+
     --lumo-border-radius: 2px;
     --lumo-size-m: 32px;
     --lumo-size-l: 40px;
